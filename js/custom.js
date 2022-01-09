@@ -50,7 +50,8 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
@@ -60,6 +61,7 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
+  variableWidth: true,
 
   
 });

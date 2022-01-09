@@ -175,11 +175,13 @@ header .nav_bars{
         font-size: 36px;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
+        z-index: 9999;
     }
    #banner h1{
         font-size: 52px;
         font-family: 'Raleway', sans-serif;
         font-weight: 800;
+        z-index: 999;
     }
   
    #banner p{
@@ -188,6 +190,7 @@ header .nav_bars{
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         padding: 0px 628px;
+        z-index: 999;
     }
   .banner_btn{
       margin-top: 50px;
@@ -899,9 +902,6 @@ color: white;
 #footer_above .project_item:hover .pro_txt p{
 color: #c7b299;
 }
-/* #footer_above .project_item:hover .overlay{
-
-} */
 
 #footer_above .ic{
 font-size: 21px;
@@ -930,6 +930,110 @@ opacity: 1;
 
 
 
+
+
+
+
+
+.slider-nav{
+  width: 590px;
+  margin: auto;
+}
+
+.slider-for .slider_item .ioc_feedback h4{
+  width: 570px;
+  margin: auto;
+}
+
+ .slider-nav  img{
+  width: 60%;
+  margin: auto;
+}
+ .slick-active  img{
+  width: 60%;
+}
+.slider-nav .slick-current img{
+  width: 100%;
+} 
+ .slider-nav .slick-current.user::after{
+  opacity: 0;
+}
+.slider-nav .user{
+  margin: 0 30px;
+  position: relative;
+  z-index: -1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.slider-nav .user::after{
+  position: absolute;
+  content: "";
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  background-color: #f0e8e8c2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 1;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+} 
+
+.slider-nav img{
+  border: 5px solid transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.slider-nav .slick-current img{
+  border: 5px solid transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.slider-for{
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.slider-for .slider_item{
+text-align: center;
+}
+
+.slider-for::after{
+  position: absolute;
+  content: " ";
+  bottom: 0%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #f1f1f1;
+  transform: translate(-50%,50%) rotate(45deg);
+  -webkit-transform: translate(-50%,50%) rotate(45deg);
+  -moz-transform: translate(-50%,50%) rotate(45deg);
+  -ms-transform: translate(-50%,50%) rotate(45deg);
+  -o-transform: translate(-50%,50%) rotate(45deg);
+  border-radius: 0px 0px 6px 0px;
+  -webkit-border-radius: 0px 0px 6px 0px;
+  -moz-border-radius: 0px 0px 6px 0px;
+  -ms-border-radius: 0px 0px 6px 0px;
+  -o-border-radius: 0px 0px 6px 0px;
+}
 
 .footer_bnr{
   background-image: url(../images/poster.jpg);
