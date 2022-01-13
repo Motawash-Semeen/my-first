@@ -51,8 +51,10 @@ $('.slider-for').slick({
   arrows: false,
   fade: true,
   asNavFor: '.slider-nav',
+  speed:20,
   
 });
+
 $('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -65,3 +67,4 @@ $('.slider-nav').slick({
 
   
 });
+
