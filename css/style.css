@@ -148,17 +148,6 @@ header .nav_bars{
   opacity: 1;
 }
 
-   /* .bnner_imgg{
-        background: url(../images/banner.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 380px 0px;
-        text-align: center;
-        color: white;
-       position: relative;
-       top:-91px;
-    } */
 
     .banner_conz{
       position: absolute;
@@ -946,14 +935,24 @@ opacity: 1;
 }
 
  .slider-nav  img{
-  width: 60%;
   margin: auto;
+  transform: scale(0.6);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
  .slick-active  img{
-  width: 60%;
+  transform: scale(0.6);
+  transition: all 0.5s;
 }
 .slider-nav .slick-current img{
-  width: 100%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 } 
  .slider-nav .slick-current.user::after{
   opacity: 0;
@@ -987,6 +986,11 @@ opacity: 1;
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 } 
 
 .slider-nav img{
